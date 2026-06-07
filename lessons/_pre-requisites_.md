@@ -29,7 +29,7 @@ Para que você tire o melhor proveito do curso, é necessário que você possua 
 
 > **Obs. 5:** Deixei links acima para playlists sobre JS e seletores CSS no [Canal TAT no YouTube](https://youtube.com/@talkingabouttesting), além de um repositório no GitHub com o básico de linha de comando e um vídeo sobre os comandos de git que mais utilizo.
 
-___
+---
 
 Legal, os pré-requisitos estão prontos. ☑️
 

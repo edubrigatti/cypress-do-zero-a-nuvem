@@ -32,6 +32,6 @@ Acredito que a prática leva à perfeição.
 
 Por isso, ao final de cada aula, há exercícios para você colocar em prática os novos conhecimentos.
 
-___
+---
 
 Agora que você conhece a estrutura do curso, vá para a seção de [pré-requisitos](./_pre-requisites_.md).
