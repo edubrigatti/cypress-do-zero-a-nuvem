@@ -1,3 +1,5 @@
+import './commands'
+
 describe('Central de Atendimento ao Cliente', () => {
   beforeEach(() => {
     cy.visit('/src/index.html')
@@ -39,7 +41,7 @@ describe('Central de Atendimento ao Cliente', () => {
     cy.get('#phone').type('abcde').should('have.value', '')
   })
 
-  it.only('mensagem de erro quando telefone se torna obrigatório mas não é preenchido antes do envio de formulário', () => {
+  it('mensagem de erro quando telefone se torna obrigatório mas não é preenchido antes do envio de formulário', () => {
     cy.get('#firstName').type('Eduardo P', { delay: 100 })
     cy.get('#firstName').should('have.value', 'Eduardo P')
     cy.get('#lastName').type('Brigatti')
@@ -49,6 +51,21 @@ describe('Central de Atendimento ao Cliente', () => {
     cy.get('#phone-checkbox').check()
     cy.get('.button[type="submit"]').click()
     cy.contains('button', 'Enviar').click()
+    cy.get('.error').should('be.visible').and('contain.text', 'campos obrigatórios')
+  })
+
+  it('limpar campo para posterior digitação', () => {
+    cy.get('#firstName').type('Eduardo B', { delay: 100 }).should('have.value', 'Eduardo B')
+    cy.get('#firstName').clear().should('have.value', '')
+    cy.get('#firstName').type('Eduardo Pina', { delay: 100 })
+    cy.get('#lastName').type('Brigatto', { delay: 100 })
+    cy.get('#lastName').clear()
+    cy.get('#lastName').type('Brigatti', { delay: 100 })
+    cy.get('#email').type('edubrigatti@gmai,com')
+  })
+
+  it.only('mensagem de erro quando clicar em gravar sem preencher todos os campos', () => {
+    cy.get('.button[type="submit"]').should('have.text', 'Enviar').click()
     cy.get('.error').should('be.visible').and('contain.text', 'campos obrigatórios')
   })
 })
