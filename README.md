@@ -1,28 +1,39 @@
-# 🌲 Cypress, do Zero à Nuvem ☁️
+# Cypress do Zero à Nuvem
 
-👋 Seja bem-vindo(a)!
+Projeto desenvolvido durante o curso **Cypress do Zero à Nuvem**, com foco na criação de testes automatizados de interface utilizando **Cypress e JavaScript**.
 
-É muito bom tê-lo(a) aqui. Tenho certeza que você vai amar esse curso. ❤️
+O projeto aborda desde a configuração inicial do Cypress até a criação de testes rápidos, confiáveis e independentes, explorando diferentes formas de interação com aplicações web e validação dos resultados esperados.
 
-## O que você vai aprender?
+## 🚀 Conteúdos praticados
 
-- Como configurar um projeto Cypress do zero
-- Como visitar páginas locais e remotas
-- Como lidar com os elementos mais comuns encontrados em aplicações web
-- Como testar upload de arquivos
-- Como realizar as mais diversas verificações de resultados esperados
-- Como criar comandos customizados
-- Como lidar com links que abrem em outra aba do navegador
-- Como rodar testes simulando as dimensões de um dispositivo móvel
-- Como resolver os mesmos problemas de diferentes formas, conhecendo a [API do Cypress](https://docs.cypress.io/api/table-of-contents)
-- Como criar uma documentação mínima para seu projeto de testes automatizados
-- Como executar os testes em um _workflow_ de integração contínua sempre que mudanças ocorrerem no código da aplicação (ou dos testes)
-- Como integrar seu _workflow_ de integração contínua com o Cypress Cloud (o serviço de gestão de testes do Cypress na nuvem)
+* Configuração e estruturação de projetos com Cypress
+* Navegação entre páginas e URLs
+* Interação com campos de formulário
+* Preenchimento de inputs
+* Seleção de opções
+* Radio buttons e checkboxes
+* Upload de arquivos e fixtures
+* Simulação de drag-and-drop
+* Interação com links e novas abas
+* Criação de comandos personalizados
+* Assertions e validações de resultados
+* Organização de testes independentes
+* Execução de testes em diferentes resoluções
+* Automação de testes de interface gráfica
 
-## Vamos começar?
+## ☁️ Integração Contínua
 
-Vá para a seção [estrutura do curso](./lessons/_course-structure_.md).
+O projeto também contempla a execução dos testes em uma esteira de **Integração Contínua (CI)** utilizando:
 
----
+* **GitHub Actions**
+* **Cypress Cloud**
 
-Este é um curso da **Escola Talking About Testing**.
+Essa integração permite executar os testes automaticamente e acompanhar seus resultados, facilitando a identificação de falhas e o monitoramento da qualidade da aplicação.
+
+## 🎯 Objetivo
+
+O objetivo deste projeto é colocar em prática os principais recursos do Cypress e desenvolver uma base sólida em **automação de testes**, aplicando boas práticas que podem ser utilizadas em projetos web reais.
+
+> **Tecnologias:** JavaScript • Cypress • Node.js • Git • GitHub • GitHub Actions • Cypress Cloud
+
+
